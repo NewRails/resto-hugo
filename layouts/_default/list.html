@@ -1,0 +1,13 @@
+{{define "main"}}
+<h2 class="text-center">{{.Site.Title}} - Blog</h2>
+<br>
+<div class="container">
+    {{range .Pages}}
+    <div class="container">
+        <h5><a href="{{.Permalink}}">{{ .Title }}</a></h5>
+        <small class="text-secondary">{{.PublishDate.Format "January 2, 2006"}} | {{.ReadingTime}} minute read</small> 
+    </div>  
+    <br>      
+    {{end}}
+</div>
+{{end}}

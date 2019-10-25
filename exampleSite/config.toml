@@ -1,0 +1,19 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Resto Hugo - Port of resto theme for hugo"
+theme = "resto-hugo"
+copyright = "&copy 2019 Resto Hugo" # HTML tags supported
+googleAnalytics = "UA-123-45"
+disqusShortname = "yourdiscussshortname"
+
+# Theme specific configuration
+[params]
+logo = "img/logo.png"
+enableDisqus = true # enable / disable comments for blog posts
+enableGA = true # enable / disable google analytics
+heroText = "We Love <br> Delicious Foods !"
+footerText = "This area supports HTML code. Text can be edited with <code>footerText</code> value in config.toml"
+facebook = "https://facebook.com"
+twitter = "https://twitter.com"
+instagram = "https://instagram.com"
+

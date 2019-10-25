@@ -1,0 +1,14 @@
+{{define "main" }}
+<br>
+<div class="container-fluid text-center">
+        <h2>{{ .Title }}</h2>
+            <small class="text-secondary">Published on: {{.PublishDate.Format "January 2, 2006"}} | {{.ReadingTime}} minute read</small> 
+                <div class="container text-left">
+                    <p>{{ .Content }} </p>
+                        {{if .Site.Params.enableDisqus}}
+                            {{ template "_internal/disqus.html" . }}
+                        {{end}}
+                </div>
+</div>
+
+{{ end }}

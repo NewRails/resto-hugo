@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Resto Hugo"
+license = "CC-BY-3.0"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = ""
+homepage = "http://example.com/"
+tags = ["business","single page","blog","minimal", "clean"]
+features = ["blog", "Clean and minimal", "Responsive", "Social media links", "Syntax highlighting", "business"]
+min_version = "0.41"
+
+[author]
+  name = "Sai Karthik"
+  homepage = "https://kskarthik.gitlab.io"
+
+# If porting an existing theme
+[original]
+  name = "Resto"
+  homepage = "https://freehtml5.co/resto-free-responsive-bootstrap-4-template-for-restaurants/"
+  

@@ -28,7 +28,7 @@ Feel free to contribute changes, features to this theme!
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the restaurant Template. Please Search [existing issues](https://gitlab.com/kskarthik/resto-hugo/issues). It’s possible someone has already reported the same problem.
+We use Gitlab Issues as the official bug tracker for the restaurant Template. Please Search [existing issues](https://gitlab.com/kskarthik/resto-hugo/issues). It’s possible someone has already reported the same problem.
 If your problem or idea is not addressed yet, [open a new issue](https://gitlab.com/kskarthik/resto-hugo/issues)
 
 ## Licensing

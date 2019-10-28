@@ -1,13 +1,21 @@
 {{define "main"}}
-<h2 class="text-center">{{.Site.Title}} - Blog</h2>
-<br>
-<div class="container">
-    {{range .Pages}}
-    <div class="container">
-        <h5><a href="{{.Permalink}}">{{ .Title }}</a></h5>
-        <small class="text-secondary">{{.PublishDate.Format "January 2, 2006"}} | {{.ReadingTime}} minute read</small> 
-    </div>  
-    <br>      
-    {{end}}
-</div>
+<section class="container">
+        <h2 class="text-center">{{.Title}}</h2>
+    {{if eq .Kind "taxonomyTerm"}}
+            {{range $key, $value := .Data.Terms.Alphabetical}}
+                <span class='badge badge-dark'><a class='text-white' href='{{ "tags/" | absURL }}{{ $value.Name | lower }}'>{{ $value.Name }}</a></span>
+            {{end}}
+        {{else}}
+            <div class="container row">
+                    {{range .Pages}}
+                    <div class="container-fluid col-md-5 m-3">
+                        <h5><a href="{{.Permalink}}">{{ .Title }}</a></h5>
+                        {{if eq .Section "blog"}}
+                        <small class="text-secondary">Published on: {{.PublishDate.Format "January 2, 2006"}} | {{.ReadingTime}} minute read</small>    
+                        {{end}}
+                    </div>     
+                    {{end}}
+            </div>
+    {{end }}
+</section>
 {{end}}

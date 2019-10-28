@@ -1,14 +1,21 @@
 {{define "main" }}
-<br>
-<div class="container-fluid text-center">
+<section class="container">
+    {{ if eq .Section "blog"}}
         <h2>{{ .Title }}</h2>
-            <small class="text-secondary">Published on: {{.PublishDate.Format "January 2, 2006"}} | {{.ReadingTime}} minute read</small> 
-                <div class="container text-left">
-                    <p>{{ .Content }} </p>
-                        {{if .Site.Params.enableDisqus}}
-                            {{ template "_internal/disqus.html" . }}
-                        {{end}}
-                </div>
-</div>
+            <small class="text-secondary">Published on: {{.PublishDate.Format "January 2, 2006"}} | {{.ReadingTime}} minute read</small><br> 
+            <small class="text-secondary">Tags: </small>
+                {{- range .Params.tags -}}
+                    <span class='badge badge-dark'><a class='text-white' href='{{ "tags/" | absURL }}{{ . | lower }}'>{{ . }}</a></span>
+                {{ end }}
+            <p>{{ .Content }}</p>
+                
+            {{if .Site.Params.enableDisqus}}
+                    {{ template "_internal/disqus.html" . }}
+                {{end}}           
+    {{else}}
 
+    <h2 class="text-center">{{.Title}}</h2>
+    <p>{{.Content}}</p>
+    {{end}}
+</section>
 {{ end }}

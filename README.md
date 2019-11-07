@@ -1,4 +1,4 @@
-![Screenshot](exampleSite/screenshot.png "Resto Hugo Theme!")
+![Screenshot](/images/screenshot.png "Resto Hugo Theme!")
 
 
 **The images are only for demonstration purpose, Please don't use those images.**

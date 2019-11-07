@@ -8,7 +8,10 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="{{.Site.BaseURL}}vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}vendor/select2/select2.min.css">
+    <!--Don't load owl carousel in non home pages-->
+    {{if .IsHome}} 
     <link rel="stylesheet" href="{{.Site.BaseURL}}vendor/owlcarousel/owl.carousel.min.css">
+    {{end}}
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">

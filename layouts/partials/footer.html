@@ -67,8 +67,10 @@
 	<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
 	<script src="{{ .Site.BaseURL }}vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+	{{if .IsHome }}
 	<!--Main JS --> 
 	<script src="{{ .Site.BaseURL }}js/app.min.js "></script>
+	{{end}}
 	<!--Google Analytics-->
 	{{ if .Site.Params.enableGA }}
 		{{ template "_internal/google_analytics.html" . }}

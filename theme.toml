@@ -4,8 +4,8 @@
 name = "Resto Hugo"
 license = "CC-BY-3.0"
 licenselink = "https://gitlab.com/kskarthik/resto-hugo/blob/master/LICENSE.md"
-description = ""
-homepage = "http://example.com/"
+description = "Port of Resto Theme by freehtml5.co to hugo"
+homepage = "https://gitlab.com/kskarthik/resto-hugo"
 tags = ["business","single page","blog","minimal", "clean"]
 features = ["blog", "Clean and minimal", "Responsive", "Social media links", "Syntax highlighting", "business"]
 min_version = "0.41"

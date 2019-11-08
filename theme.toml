@@ -3,7 +3,7 @@
 
 name = "Resto Hugo"
 license = "CC-BY-3.0"
-licenselink = "https://gitlab.com/kskarthik/resto-hugo/blob/master/LICENSE"
+licenselink = "https://gitlab.com/kskarthik/resto-hugo/blob/master/LICENSE.md"
 description = ""
 homepage = "http://example.com/"
 tags = ["business","single page","blog","minimal", "clean"]

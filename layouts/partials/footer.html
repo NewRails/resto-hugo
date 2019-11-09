@@ -58,18 +58,18 @@
 </div>
 </div>
 	<!-- External JS -->
-	<script src="{{.Site.BaseURL}}js/jquery.min.js"></script>
-	<script src="{{.Site.BaseURL}}js/moment.min.js"></script>
-	<script src="{{ .Site.BaseURL }}vendor/bootstrap/popper.min.js"></script>
-	<script src="{{ .Site.BaseURL }}vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="{{ .Site.BaseURL }}vendor/select2/select2.min.js "></script>
-	<script src="{{ .Site.BaseURL }}vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="{{ .Site.BaseURL }}js/featherlight.min.js"></script>
-	<script src="{{ .Site.BaseURL }}vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
-	<script src="{{ .Site.BaseURL }}js/tempusdominus-bootstrap-4.min.js"></script>
+	<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+	<script src="{{ "js/moment.min.js" | absURL }}"></script>
+	<script src="{{ "vendor/bootstrap/popper.min.js" | absURL }}"></script>
+	<script src="{{ "vendor/bootstrap/bootstrap.min.js" | absURL }}"></script>
+	<script src="{{ "vendor/select2/select2.min.js" | absURL}}"></script>
+	<script src="{{ "vendor/owlcarousel/owl.carousel.min.js" | absURL}}"></script>
+	<script src="{{ "js/featherlight.min.js" | absURL}}" ></script>
+	<script src="{{ "vendor/stellar/jquery.stellar.js" | absURL}}" type="text/javascript" charset="utf-8"></script>
+	<script src="{{ "js/tempusdominus-bootstrap-4.min.js" | absURL}}" ></script>
 	{{if .IsHome }}
 	<!--Main JS --> 
-	<script src="{{ .Site.BaseURL }}js/app.min.js "></script>
+	<script src="{{ "js/app.min.js"  | absURL}}"></script>
 	{{end}}
 	<!--Google Analytics-->
 	{{ if .Site.Params.enableGA }}

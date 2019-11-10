@@ -1,15 +1,13 @@
-![Screenshot](/images/screenshot.png "Resto Hugo Theme!")
+![Screenshot](https://gitlab.com/kskarthik/resto-hugo/raw/master/images/screenshot.png "Resto Hugo Theme!")
 
 
 **The images are only for demonstration purpose, Please don't use those images.**
 
 ## Installation
 
-Navigate to your themes folder in your Hugo site and use the following commands:
+Navigate to your themes folder in your Hugo site and use the following command:
 
 ```
-$ mkdir themes
-$ cd themes
 $ git clone https://gitlab.com/kskarthik/resto-hugo.git
 
 ```
